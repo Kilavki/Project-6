@@ -2,14 +2,21 @@
 $accent:     #ffc222 // Accent Color
 $fontsize:   14px // Body Font Size
 $textcolor:  #5e5e5e // Text Color
-$mainfamily: roboto, sans-serif // Main Font Family
-$fht: ptserif// Main Font Family
+$mainfamily: ptserif, serif // Main Font Family
+$roboto: roboto, sans-serif // Accent font
 
 
 
 //!install
-@mixin font($family-f, $size-f, $weight-f, $fony-c) 
+@mixin font($family-f, $weight-f, $size-f, $leading-f, $tracking)
 	font-family: $family-f
-	font-size: $size-f
 	font-weight: $weight-f
-	color: $fony-c
+	font-size: $size-f
+	line-height: $leading-f
+	letter-spacing: $tracking
+
+@mixin clearfix
+	&:after 
+		content: ''
+		display: block
+		clear: both
