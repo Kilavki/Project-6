@@ -6,6 +6,7 @@
 	box-sizing: border-box
 
 body
+	font-size: $fontsize
 
 a
 	text-decoration: none
@@ -24,6 +25,46 @@ li
 	&__top
 		background-color: #303030
 	&__btn
+		float: right
+		@include font(roboto, 400, 16px, 36px, 0)
+		color: #1b1b1b
+		background: $accent
+		padding: 5px 20px 4px 50px
+	&__contact
+		@include clearfix
+	&__phone,
+	&__mail
+		@include font(roboto, 400, 14px, 45px, 0.025em)
+		color: #cbcacb
+	&__phone
+		padding:
+			left: 20px
+			right: 30px
+	&__mail
+		padding: 
+			left: 24px
+	&__content
+		padding: 38px 0 33px
+		&-inner
+			display: flex
+			justify-content: space-between
+			
+
+.menu
+	li 
+		display: inline-block
+	a 
+		@include font(roboto, 400, 16px, 36px, 0)
+		color: #323232
+		padding: 0 16px
+		border: 1px solid transparent
+		&:hover
+			border-color: $accent
+			transition: all 0.3s
+	li + li 
+		padding-left: 10px
+
+	
 
 
 
