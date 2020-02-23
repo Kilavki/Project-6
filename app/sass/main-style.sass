@@ -89,5 +89,26 @@ li
 	display: none
 	
 
+.slider
+	background:
+		image: url(../img/slider/slider-bg.jpg)
+		repeat: no-repeat
+		size: cover
+		position: center
+	min-height: 500px
+	&__item
+		max-width: 665px
+		margin: 0 auto
+		padding-top: 110px
+		text-align: center
+	&__title
+		margin-bottom: 22px
+		@include font(roboto, 500, 30px, 36px, 0.05em)
+		color: #ffffff
+	&__text
+		@include font(ptserif, 400, 18px, 24px, 0)
+		color: #d3d2d2
 
 
+.test
+	@include font(ptserif, 400, 18px, 24px, 0)
