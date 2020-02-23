@@ -25,26 +25,47 @@ li
 	&__top
 		background-color: #303030
 	&__btn
+		position: relative
 		float: right
 		@include font(roboto, 400, 16px, 36px, 0)
 		color: #1b1b1b
 		background: $accent
 		padding: 5px 20px 4px 50px
+		&:before
+			content: '\f0b1'
+			position: absolute
+			left: 22px
+			font-family: 'icomoon'
+			color: #1b1b1b
 	&__contact
 		@include clearfix
 	&__phone,
 	&__mail
+		position: relative
 		@include font(roboto, 400, 14px, 45px, 0.025em)
 		color: #cbcacb
 	&__phone
 		padding:
 			left: 20px
 			right: 30px
+		&:before
+			content: '\f095'
+			position: absolute
+			left: 0
+			font-family: 'icomoon'
+			color: $accent
 	&__mail
 		padding: 
 			left: 24px
+		&:before
+			content: '\f003'
+			position: absolute
+			left: 0
+			font-family: 'icomoon'
+			color: $accent
+
 	&__content
-		padding: 38px 0 33px
+		padding: 34px 0 24px
 		&-inner
 			display: flex
 			justify-content: space-between
