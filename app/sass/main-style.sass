@@ -21,6 +21,27 @@ li
 	margin: 0 auto
 	padding: 0 15px
 
+.default-btn
+	position: relative
+	display: inline-block
+	padding:
+		top: 8px
+		right: 24px
+		bottom: 8px
+		left: 24px
+	@include font(roboto, 500, 14px, 24px, 0.025em)
+	color: #ffffff
+	border: 1px solid $accent
+	border-right-width: 22px
+	z-index: 2
+	&:after
+		content: '\f105'
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: -14px
+		font-family: 'icomoon'
+
 .header
 	&__top
 		background-color: #303030
@@ -108,7 +129,8 @@ li
 	&__text
 		@include font(ptserif, 400, 18px, 24px, 0)
 		color: #d3d2d2
+		margin-bottom: 50px
+	&__btn
 
 
-.test
-	@include font(ptserif, 400, 18px, 24px, 0)
+
