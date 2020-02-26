@@ -128,6 +128,7 @@ li
 	border: 1px solid $accent
 	border-right-width: 22px
 	z-index: 2
+	outline: none
 	&:after
 		content: '\f105'
 		position: absolute
@@ -136,7 +137,7 @@ li
 		right: -14px
 		font-family: 'icomoon'
 
-.slick
+.slick 
 	&-btn
 		position: absolute
 		top: 70%
@@ -144,19 +145,27 @@ li
 		height: 40px
 		border: 1px solid #fff
 		z-index: 3
+		background-color: $accent
+		cursor: pointer
+		outline: none
+		&.slick-disabled
+			cursor: default
+			background-color: transparent
 		&:before
 			position: absolute
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%)
 			font-family: 'icomoon'
+			color: #ffffff
 	&-next
-		left: 0
-		&:before:
-			content: '\f105'
-	&-prev
 		right: 0
 		&:before
+			content: '\f105'
+	&-prev
+		left: 0
+		&:before
 			content: '\f104'
+
 
 
