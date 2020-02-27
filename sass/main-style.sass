@@ -232,5 +232,29 @@ li
 			color: #050505
 			border-bottom: 1px solid #050505
 
+.about
+	min-height: 300px
+	padding: 40px 0 45px
+	background:
+		image: url(../img/bg/about-bg.jpg)
+		size: cover
+		position: center
+		repeat: no-repeat
+	&__inner
+		max-width: 545px
+	&__title
+		margin-bottom: 35px
+		@include font(roboto, 500, 24px, 24px, 0)
+		color: #ffffff
+	&__text
+		margin-bottom: 28px
+		@include font(ptserif, 400, 14px, 24px, 0.01em)
+		color: #d3d2d2
+	&__btn.default-btn
+		&:after
+			color: #000000
+
+	
+
 
 
