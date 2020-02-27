@@ -185,7 +185,7 @@ li
 			width: 100px
 			height: 2px
 			background-color: $accent
-	&-title
+	&__title
 		margin-bottom: 13px
 		@include font(roboto, 500, 24px, 24px, 0)
 		color: #212020
@@ -254,7 +254,88 @@ li
 		&:after
 			color: #000000
 
-	
+.form
+	padding:
+		top: 45px
+	&__inner
+		min-height: 460px
+		padding:
+			bottom: 40px
+		background:
+			image: url(../img/bg/form-bg.png)
+			size: contain
+			position: bottom right
+			repeat: no-repeat
+		button
+			float: right
+			background-color: transparent
+			color: #282828
+	&__title-box
+		position: relative
+		max-width: 520px
+		padding-left: 140px
+		&:before
+			content: ''
+			position: absolute
+			top: 11px
+			left: 0
+			width: 100px
+			height: 2px
+			background-color: $accent
+	&__title
+		margin-bottom: 13px
+		@include font(roboto, 500, 24px, 24px, 0)
+		color: #212020
+	&__text
+		@include font(ptserif, 400, 14px, 18px, 0.01em)
+		color: #5e5e5e
+	&__box
+		max-width: 850px
+		padding:
+			top: 36px
+		&-inner
+			display: flex
+			justify-content: space-between
+			label,
+			input,
+			textarea,
+			select
+				display: block
+				width: 100%
+			label
+				@include font(roboto, 400, 14px, 36px, 0)
+				color: #282828
+			input
+				margin:
+					bottom: 8px
+				height: 40px
+				padding: 0 10px
+				border: 1px solid #e3e6e6
+				outline: none 
+			select
+				height: 40px
+				padding:
+					left: 18px
+				border: 1px solid #e3e6e6
+				outline: none 
+			textarea
+				margin: 
+					bottom: 42px
+				height: 208px
+				padding: 10px
+				border: 1px solid #e3e6e6
+				outline: none
+				resize: none
+		&-left
+			max-width: 260px
+			width: 100%
+		&-right
+			max-width: 555px
+			width: 100%
+
+
+
+
 
 
 
