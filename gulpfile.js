@@ -62,8 +62,8 @@ gulp.task('build:sass', function() {
 
 gulp.task('build:js', function() {
 	return gulp.src([
-		'./app/js/*.js',
-		'./app/libs/**/*.js'
+		'./app/libs/**/*.js',
+		'./app/js/*.js'
 	])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify({
