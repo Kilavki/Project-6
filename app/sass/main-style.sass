@@ -532,3 +532,61 @@ li
 		border-color: #dadada
 		&:before
 			color: #dadada
+
+.footer
+	&__content
+		padding: 30px 0 36px
+		background-color: #595959
+	&__inner
+		display: flex
+		justify-content: space-between
+		.header__btn
+			float: none
+			display: inline-block
+	&__map
+		padding:
+			top: 10px
+		iframe
+			max-width: 632px
+			width: 100%
+			height: 250px
+	&__info
+		max-width: 360px
+		width: 100%
+		&-title
+			@include font(roboto, 500, 16px, 36px, 0.05em)
+			color: #ffffff
+		&-text
+			padding: 20px 0 30px
+			@include font(roboto, 400, 14px, 18px, 0)
+			color: #d3d2d2
+		&-list
+			padding: 10px 0 0
+			li
+				margin-top: 10px
+			a
+				position: relative
+				padding-left: 36px
+				@include font(roboto, 400, 16px, 36px, 0.025em)
+				color: #ffffff
+				&:before
+					content: '\f003'
+					position: absolute
+					top: 8px
+					left: 0
+					@include font(icomoon, 400, 16px, 18px, 0.05em)
+					color: $accent
+	&__copy
+		padding: 8px 0
+		@include font(roboto, 400, 12px, 24px, 0.05em)
+		text-align: center
+		color: #ffffff
+		background-color: #303030
+
+a.footer__phone:before
+	content: '\f095'
+	left: 3px
+a.footer__address:before
+	content: '\f041'
+	left: 3px
+	
