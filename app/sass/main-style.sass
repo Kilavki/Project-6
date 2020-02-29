@@ -427,4 +427,108 @@ li
 		color: #d3d2d2
 
 
+.news
+	padding: 55px 0 110px
+	background-color: #f9f9f9
+	&__top
+		display: flex
+		justify-content: space-between
+		margin-bottom: 60px
+	&__title-box
+		position: relative
+		max-width: 520px
+		padding-left: 140px
+		&:before
+			content: ''
+			position: absolute
+			top: 11px
+			left: 0
+			width: 100px
+			height: 2px
+			background-color: $accent
+	&__title
+		margin-bottom: 13px
+		@include font(roboto, 500, 24px, 24px, 0)
+		color: #212020
+	&__text
+		@include font(ptserif, 400, 14px, 18px, 0.01em)
+		color: #5e5e5e
+	&__btn a
+		padding: 8px 40px
+		@include font(roboto, 400, 14px, 24px, 0.025em)
+		color: #373636
+		border: 3px solid #e6e6e6
+	&__inner //inner
+		display: flex
+		justify-content: space-between
+	&__slider
+		position: relative
+		max-width: 555px
+		width: 100%
+		padding:
+			top: 64px
+			right: 36px
+			bottom: 48px
+			left: 70px
+		background-color: #fff
+		box-shadow: 0px 5px 15.36px 0.64px rgba(128, 127, 127, 0.13)
+		&:before
+			content: '\f10e'
+			position: absolute
+			top: 0
+			left: 70pxl
+			width: 64px
+			height: 32px
+			@include font(icomoon, 400, 16px, 18px, 0.05em)
+			text-align: center
+			line-height: 34px
+			color: #fff
+			background-color: $accent
+		&-title
+			@include font(roboto, 400, 18px, 24px, 0.05em)
+			color: #242424
+		&-text
+			padding: 20px 0
+			@include font(ptserif, 400, 14px, 18px, 0.01em)
+			color: #5e5e5e
+		&-author
+				@include font(roboto, 400, 14px, 18px, 0.01em)
+				color: #212020
+	&__blog
+		max-width: 260px
+		width: 100%
+		&-title
+			padding: 12px 0
+			@include font(roboto, 400, 16px, 18px, 0.05em)
+			color: #242424
+		&-text
+			@include font(ptserif, 400, 14px, 18px, 0.01em)
+			color: #5e5e5e
+	&__images
+		position: relative
+	&__data
+		position: absolute
+		top: 0
+		left: 10px
+		width: 48px
+		height: 54px
+		padding:
+			top: 30px
+		@include font(ptserif, 500, 14px, 18px, 0)
+		text-align: center
+		color: #ffffff
+		background-color: $accent
 
+.news__slider-inner
+	.slick-btn
+		top: auto
+		bottom: -110px
+	.slick-next
+		right: -35px
+	.slick-prev
+		left: auto
+		right: 20px
+	.slick-disabled
+		border-color: #dadada
+		&:before
+			color: #dadada
