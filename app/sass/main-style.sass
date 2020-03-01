@@ -544,12 +544,13 @@ li
 			float: none
 			display: inline-block
 	&__map
+		// max-width: 632px
+		// height: 250px
 		padding:
 			top: 10px
 		iframe
-			max-width: 632px
-			width: 100%
-			height: 250px
+			// width: 100%
+			// height: 100%
 	&__info
 		max-width: 360px
 		width: 100%
@@ -589,4 +590,18 @@ a.footer__phone:before
 a.footer__address:before
 	content: '\f041'
 	left: 3px
-	
+
+#modal input
+	display: block
+	width: 100%
+	height: 40px
+	margin-bottom: 8px
+	padding: 0 10px
+	@include font(roboto, 400, 14px, 36px, 0)
+	border: 1px solid #e3e6e6
+	outline: none 
+
+#modal input[type="submit"]
+	border: none
+	background-color: $accent
+
