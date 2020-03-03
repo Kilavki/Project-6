@@ -1,0 +1,45 @@
+// @media (max-width: 900px)
+
+
+@media (max-width: 700px)
+	.header
+		&__contact
+			text-align: center
+		&__btn
+			float: none
+			&--menu
+				display: block
+				
+	.menu
+		ul
+			display: none
+			position: absolute
+			left: 0
+			right: 0
+			padding: 0
+			text-align: center
+			z-index: 50
+		li
+			display: block
+		li + li
+			padding: 0
+		a 
+			display: block
+			background-color: $accent
+
+@media (max-width: 400px)
+	.header
+		&__btn
+			margin-top: 14px
+
+
+@media (max-width: 375px)
+	.header
+		&__mail
+			padding-right: 30px
+
+
+
+@media (min-width: 700px)
+	.menu ul
+		display: block !important
