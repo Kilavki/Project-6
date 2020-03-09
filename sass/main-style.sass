@@ -118,6 +118,9 @@ li
 	&__inner
 		position: relative
 	
+	ul.slick-dots
+		padding: 0
+
 	.slick-dots
 		display: flex
 		justify-content: center
@@ -250,8 +253,8 @@ li
 				&:after
 					color: #ffffff
 		&-link
-			margin-right: 66px
-			@include font(roboto, 400, 14px, 18px, 0)
+			margin-right: 60px
+			@include font(roboto, 400, 14px, 42px, 0)
 			color: #050505
 			border-bottom: 1px solid #050505
 
@@ -569,13 +572,12 @@ li
 			float: none
 			display: inline-block
 	&__map
-		// max-width: 632px
-		// height: 250px
-		padding:
-			top: 10px
+		max-width: 632px
+		width: 100%
+		padding-top: 10px
 		iframe
-			// width: 100%
-			// height: 100%
+			width: 100%
+			height: 100%
 	&__info
 		max-width: 360px
 		width: 100%
@@ -608,6 +610,8 @@ li
 		text-align: center
 		color: #ffffff
 		background-color: #303030
+.copy__text
+	opacity: 0.2
 
 a.footer__phone:before
 	content: '\f095'
