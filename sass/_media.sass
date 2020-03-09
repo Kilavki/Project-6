@@ -1,11 +1,50 @@
 @media (max-width: 1140px)
 	.services
 		&__items
-			flex-flow: column wrap
-			align-items: center
+			display: block
 		&__item
-			max-width: 80%
-			margin: 20px auto
+			max-width: 90%
+			min-height: 320px
+			margin: 4% auto
+			padding: 26px 0
+			&-btn
+				display: flex
+				justify-content: space-around
+			&-link
+				margin-right: 0
+	.about
+		&__inner
+			max-width: 90%
+			margin: 0 auto
+	.form
+		&__inner
+			background-image: none
+	.news
+		padding-bottom: 2%
+		&__inner
+			display: block
+		&__slider
+			max-width: 90%
+			margin: 0 auto 12%
+			padding: 8% 4% 6% 8%
+		&__blogs
+			margin-top: 14%
+		&__blog
+			display: block
+			margin: 0 auto 4%
+			max-width: 90%
+			@include clearfix
+		&__images
+			float: left
+			margin-right: 4%
+	.footer
+		&__info-text
+			margin-right: 4%
+
+
+
+
+// @media (max-width: 992px)
 
 
 @media (max-width: 900px)
@@ -15,19 +54,45 @@
 				display: inherit
 		.slick-btn
 			display: none
-	.services
+	.services,
+	.news
 		&__top
 			display: block
-			width: 80%
+			width: 90%
 			margin: 0 auto
 			text-align: center
 		&__title-box
-			padding: 0
+			padding-left: 0
 			margin: 0 auto 8%
 			&:before
 				display: none
 		&__btn
 			margin-bottom: 8%
+	.form
+		padding-bottom: 25px
+		&__box-inner
+			display: block
+		&__box-left,
+		&__box-right
+			max-width: 90%
+			margin: 0 auto
+		&__title-box
+			display: block
+			width: 90%
+			margin: 0 auto
+			padding-left: 0
+			text-align: center
+			&:before
+				display: none
+	.advantages
+		&__inner
+			display: block
+		&__item
+			max-width: 90%
+			margin: 0 auto 8%
+	.news
+		&__blogs
+			margin-top: 20%
 
 
 
@@ -59,6 +124,44 @@
 	.slider
 		.slick-dots
 			margin-top: 90px
+	.news
+		&__slider
+			padding-top: 14%
+			&-inner
+				.slick-btn
+					bottom: -100px
+				.slick-next
+					right: -28px
+		&__blogs
+			margin-top: 16%
+		&__images
+			float: none
+	.footer
+		&__inner
+			display: block
+			text-align: center
+		&__info,
+		&__map
+			max-width: 90%
+			margin: 0 auto
+		&__info-text
+			margin-right: 0
+
+@media (max-width: 600px)
+	.news
+		&__blogs
+			margin-top: 18%
+		&__slider
+			padding-top: 14%
+			&-inner
+				.slick-btn
+					bottom: -90px
+				.slick-next
+					right: -20px
+				.slick-prev
+					right: 26px
+
+
 
 @media (max-width: 400px)
 	.header
@@ -68,16 +171,16 @@
 		.slick-dots
 			margin-top: 20px
 	.services
-		&__item-btn
-			position: relative
-			bottom: 0
-			a 
-				display: block
-				width: 60%
-				margin: 10% auto 0
-		&__item-link
-			border: none
-			color: $accent
+		&__items
+			display: block
+		&__item
+			max-width: 90%
+			min-height: 360px
+			margin: 4% auto
+			padding: 26px 0
+	.news
+		&__blogs
+			margin-top: 30%
 
 
 
